@@ -4,9 +4,9 @@ import com.demoqa.pages.HomePage;
 import org.testng.annotations.Test;
 import tests.base.BaseTest;
 
-public class ElementTest extends BaseTest {
+public class FormTest extends BaseTest {
     @Test
-    public void testNavigateToElements(){
-        new HomePage().clickOnElementsButton();
+    public void testNavigateToForms(){
+        new HomePage().clickOnFormsButton();
     }
 }

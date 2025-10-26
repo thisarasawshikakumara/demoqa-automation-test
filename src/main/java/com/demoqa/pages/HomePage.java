@@ -9,12 +9,20 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//h5[text()='Elements']/../../..")
     private WebElement btnElements;
 
+    @FindBy(xpath = "//h5[text()='Forms']/../../..")
+    private WebElement btnForms;
+
     public HomePage(){
         PageFactory.initElements(driver, this);
     }
 
-    public HomePage clickOnElement(){
+    public HomePage clickOnElementsButton(){
         click(btnElements);
+        return this;
+    }
+
+    public HomePage clickOnFormsButton(){
+        click(btnForms);
         return this;
     }
 }
