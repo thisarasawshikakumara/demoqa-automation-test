@@ -1,5 +1,6 @@
 package com.demoqa.enums;
 
-public enum Envirement {
-    DEV, UAT
+public enum Environment {
+    DEV,
+    UAT
 }
